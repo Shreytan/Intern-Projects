@@ -3,61 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Storybook</title>
 </head>
 <body>
-    <header>
-        <h1>Shreyansh Shukla</h1>
-        <p>Web Developer | Designer | Creative Thinker</p>
-    </header>
+    <!-- Introduction Page -->
+    <div id="page1">
+        <h1>Welcome to the Interactive Storybook</h1>
+        <p>Click below to begin your adventure.</p>
+        <a href="#page2">Start Story</a>
+    </div>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Story Page 1 -->
+    <div id="page2">
+        <h2>Chapter 1: The Mysterious Forest</h2>
+        <p>You find yourself at the edge of a dense forest. The trees are tall and shadowy. You can either go deeper into the forest or head back to the village.</p>
+        <a href="#page3">Go Deeper</a>
+        <a href="#page4">Head Back</a>
+    </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm Shreyansh Shukla , a passionate web developer and designer with a knack for creating beautiful and functional web experiences. I love exploring new technologies and constantly learning new skills.</p>
-        <img src="profile.jpg" alt="Jane Doe" class="profile-img">
-    </section>
+    <!-- Story Page 2 (Deeper into the Forest) -->
+    <div id="page3">
+        <h2>Chapter 2: The Enchanted Clearing</h2>
+        <p>You venture further into the forest and stumble upon a beautiful clearing with a sparkling fountain. There are two paths leading out of the clearing.</p>
+        <a href="#page5">Take the Left Path</a>
+        <a href="#page6">Take the Right Path</a>
+    </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>HTML5</strong></li>
-            <li><strong>CSS3</strong></li>
-            <li><strong>JavaScript</strong></li>
-            <li><strong>React</strong></li>
-            <li><strong>Node.js</strong></li>
-        </ul>
-    </section>
+    <!-- Story Page 3 (Head Back to the Village) -->
+    <div id="page4">
+        <h2>Chapter 2: The Village</h2>
+        <p>You return to the village, where you find the townspeople worried about your absence. They thank you for coming back and invite you to a feast.</p>
+        <a href="#page7">Join the Feast</a>
+        <a href="#page8">Explore the Village</a>
+    </div>
 
-    
+    <!-- Story Page 4 (Left Path) -->
+    <div id="page5">
+        <h2>Chapter 3: The Hidden Treasure</h2>
+        <p>You take the left path and discover a hidden treasure chest buried under some leaves. Inside, you find a magical artifact that grants you special powers.</p>
+        <a href="#page9">Use the Artifact</a>
+        <a href="#page10">Leave the Forest</a>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="mailto:janedoe@example.com" method="post" enctype="text/plain">
-            <label for="name">Name: Shreyansh Shukla</label>
-            <input type="text" id="name" name="name" required>
+    <!-- Story Page 5 (Right Path) -->
+    <div id="page6">
+        <h2>Chapter 3: The Old Cabin</h2>
+        <p>You take the right path and find an old, abandoned cabin. Inside, you discover old journals that reveal secrets about the forest.</p>
+        <a href="#page11">Read the Journals</a>
+        <a href="#page12">Leave the Cabin</a>
+    </div>
 
-            <label for="email">Email: ShreyanshShukla7@gmail.com</label>
-            <input type="email" id="email" name="email" required>
+    <!-- Story Page 6 (Join the Feast) -->
+    <div id="page7">
+        <h2>Chapter 3: The Feast</h2>
+        <p>You join the feast and enjoy a night of stories and music. The townspeople are grateful for your return and celebrate with you.</p>
+        <a href="#page13">Thank the Townspeople</a>
+        <a href="#page14">Rest and Prepare</a>
+    </div>
 
-            <label for="message">Message:Hi, I'm Shreyansh</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+    <!-- Story Page 7 (Explore the Village) -->
+    <div id="page8">
+        <h2>Chapter 3: Exploring</h2>
+        <p>You explore the village and discover hidden secrets and new characters. Your adventure continues as you learn more about the village.</p>
+        <a href="#page15">Meet New Characters</a>
+        <a href="#page16">Discover Secrets</a>
+    </div>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+    <!-- Story Page 8 (Use the Artifact) -->
+    <div id="page9">
+        <h2>Chapter 4: The Power Within</h2>
+        <p>You use the magical artifact and gain new abilities. You can now explore hidden areas and unlock new paths.</p>
+        <a href="#page17">Explore New Areas</a>
+        <a href="#page18">Return Home</a>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Shreyansh Shukla. All rights reserved.</p>
-    </footer>
+    <!-- Story Page 9 (Leave the Forest) -->
+    <div id="page10">
+        <h2>Chapter 4: Leaving the Forest</h2>
+        <p>You leave the forest, reflecting on your adventure. You return to your normal life, but with newfound wisdom and experiences.</p>
+        <a href="#page19">The End</a>
+    </div>
+
+    <!-- Story Page 10 (Read the Journals) -->
+    <div id="page11">
+        <h2>Chapter 4: The Journals</h2>
+        <p>You read the journals and uncover the forest's mysteries. The knowledge helps you make better decisions in your adventure.</p>
+        <a href="#page20">Use the Knowledge</a>
+        <a href="#page21">Leave the Cabin</a>
+    </div>
+
+    <!-- Story Page 11 (Leave the Cabin) -->
+    <div id="page12">
+        <h2>Chapter 4: Leaving the Cabin</h2>
+        <p>You leave the cabin and continue your journey, using what you've learned to navigate through the forest.</p>
+        <a href="#page22">Continue Exploring</a>
+        <a href="#page23">Return Home</a>
+    </div>
+
+    <!-- Story Page 12 (Thank the Townspeople) -->
+    <div id="page13">
+        <h2>Chapter 4: Gratitude</h2>
+        <p>You thank the townspeople for their hospitality and prepare for future adventures with new friends.</p>
+        <a href="#page24">Plan Your Next Adventure</a>
+        <a href="#page25">Return Home</a>
+    </div>
+
+    <!-- Story Page 13 (Rest and Prepare) -->
+    <div id="page14">
+        <h2>Chapter 4: Preparation</h2>
+        <p>You rest and prepare for upcoming adventures. Your time in the village strengthens your resolve.</p>
+        <a href="#page26">Ready for More</a>
+        <a href="#page27">Go Home</a>
+    </div>
+
+    <!-- Story Page 14 (Meet New Characters) -->
+    <div id="page15">
+        <h2>Chapter 4: New Friends</h2>
+        <p>You meet intriguing new characters who join you on your adventures.</p>
+        <a href="#page28">Adventure Together</a>
+        <a href="#page29">Continue Alone</a>
+    </div>
+
+    <!-- Story Page 15 (Discover Secrets) -->
+    <div id="page16">
+        <h2>Chapter 4: Hidden Secrets</h2>
+        <p>You uncover hidden secrets about the village that lead to new adventures.</p>
+        <a href="#page30">Explore Further</a>
+        <a href="#page31">Return to the Village</a>
+    </div>
+
+    <!-- Story Page 16 (Use the Knowledge) -->
+    <div id="page20">
+        <h2>Chapter 5: Empowered</h2>
+        <p>You use the knowledge from the journals to navigate through the forest with ease and uncover even more mysteries.</p>
+        <a href="#page32">Explore New Mysteries</a>
+        <a href="#page33">Return to Safety</a>
+    </div>
+
+    <!-- Story Page 17 (Continue Exploring) -->
+    <div id="page22">
+        <h2>Chapter 5: New Discoveries</h2>
+        <p>You continue exploring, discovering new places and meeting new people.</p>
+        <a href="#page34">Discover More</a>
+        <a href="#page35">Return Home</a>
+    </div>
+
+    <!-- Story Page 18 (The End) -->
+    <div id="page19">
+        <h2>The End</h2>
+        <p>Your adventure has come to an end. Thank you for joining the story!</p>
+        <a href="#page1">Restart</a>
+    </div>
+
+    <!-- Story Page 19 (Use the Artifact) -->
+    <div id="page17">
+        <h2>Chapter 5: The New Power</h2>
+        <p>With the artifact’s power, you find new ways to interact with the world. Your journey takes new turns.</p>
+        <a href="#page36">Explore with Power</a>
+        <a href="#page37">Return Home</a>
+    </div>
+
+    <!-- Story Page 20 (Ready for More) -->
+    <div id="page26">
+        <h2>Chapter 5: New Challenges</h2>
+        <p>You prepare for new challenges and adventures that lie ahead.</p>
+        <a href="#page38">Face the Challenges</a>
+        <a href="#page39">Return to Safety</a>
+    </div>
+
+    <!-- Story Page 21 (Explore with Power) -->
+    <div id="page36">
+        <h2>Chapter 6: New Horizons</h2>
+        <p>Using your new power, you explore new horizons and uncover hidden realms.</p>
+        <a href="#page40">Discover New Realms</a>
+        <a href="#page41">Return Home</a>
+    </div>
+
+    <!-- Story Page 22 (Final Challenge) -->
+    <div id="page40">
+        <h2>Chapter 6: The Final Challenge</h2>
+        <p>You face the ultimate challenge with the new power you possess. It's time to decide your final actions.</p>
+        <a href="#page42">Face the Final Challenge</a>
+        <a href="#page43">Retreat and Reflect</a>
+    </div>
+
+    <!-- Story Page 23 (The End) -->
+    <div id="page42">
+        <h2>Final Chapter: The Resolution</h2>
+        <p>Your journey concludes with either triumph or reflection based on your choices. Thank you for experiencing this adventure!</p>
+        <a href="#page1">Restart</a>
+    </div>
 </body>
 </html>
