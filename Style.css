@@ -1,0 +1,246 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Clean and modern sans-serif font */
+    background-color: #fbd3e9; /* Light pink background */
+    color: #333;
+    padding: 20px;
+    line-height: 1.7;
+}
+
+/* Font for headings */
+h1, h2 {
+    font-family: 'Lora', serif; /* Elegant serif font for chapter titles */
+    color: #3a3a3a;
+    margin-bottom: 15px;
+    padding: 10px; /* Added padding for the box */
+    border: 3px solid #d1a8a7; /* Light pink border for the box around headings */
+    border-radius: 10px; /* Rounded corners for the box */
+    background-color: #ffffff; /* White background inside the box */
+    display: inline-block; /* So the box size fits the content */
+}
+
+/* Storybook Container */
+.story-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border: 2px solid #d1a8a7; /* Light pink border */
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+
+.story-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Headings and Title */
+h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #6a1b9a; /* Deep purple color for a touch of elegance */
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    text-align: left;
+    color: #d81b60; /* Light pink color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Storybook Pages */
+.story-page {
+    display: none; /* Hide all pages initially */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.story-page.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Text Styling for Story Content */
+p {
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    text-align: justify;
+    line-height: 1.8;
+    text-indent: 20px;
+}
+
+/* Beautified Chapter Links (Box-style buttons) */
+.chapter-link {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 20px 10px;
+    background: linear-gradient(135deg, #fbd3e9 0%, #bbded6 100%); /* Light pink to blue gradient */
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(255, 105, 135, 0.4);
+    transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.chapter-link:hover {
+    background: linear-gradient(135deg, #bbded6 0%, #fbd3e9 100%); /* Swapped gradient direction */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 105, 135, 0.6);
+}
+
+.chapter-link:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(255, 105, 135, 0.5);
+}
+
+.chapter-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 150, 150, 0.4);
+}
+
+/* Interactive Buttons for Page Navigation */
+.nav-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #6a1b9a, #d81b60); /* Deep purple to light pink */
+    color: white;
+    padding: 15px 40px;
+    margin-top: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(255, 105, 97, 0.4);
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #d81b60, #6a1b9a); /* Swapped gradient direction */
+    box-shadow: 0 8px 25px rgba(255, 105, 97, 0.6);
+    transform: translateY(-3px);
+}
+
+.nav-button:active {
+    background: linear-gradient(135deg, #c2185b, #4a148c);
+    transform: translateY(0);
+}
+
+.nav-button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+/* Fancy Typography for Quotes or Special Sections */
+.story-highlight {
+    font-family: 'Cinzel', serif; /* Classic serif font for special sections */
+    font-size: 2rem;
+    font-style: italic;
+    color: #880e4f;
+    text-align: center;
+    margin: 40px 0;
+    border-left: 6px solid #d81b60; /* Light pink border */
+    padding-left: 20px;
+    background: rgba(255, 245, 245, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 105, 97, 0.2);
+}
+
+/* Box Model */
+.story-box {
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Adding a Gentle Fade-In Effect on Scroll */
+.story-container {
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .nav-button {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    .story-container {
+        padding: 30px;
+    }
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .nav-button {
+        font-size: 1rem;
+        padding: 10px 18px;
+    }
+
+    .chapter-link {
+        font-size: 1.3rem;
+        padding: 12px 20px;
+    }
+}
+
+/* CSS Variables for Consistency */
+:root {
+    --primary-color: #d81b60; /* Light pink */
+    --secondary-color: #bbded6; /* Light blue */
+    --background-color: #fbd3e9; /* Light pink background */
+    --text-color: #333;
+    --highlight-color: #d81b60; /* Light pink highlight */
+    --shadow-color: rgba(0, 0, 0, 0.05);
+}
